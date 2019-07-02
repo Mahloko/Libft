@@ -6,7 +6,7 @@
 /*   By: mmahloko <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/16 07:55:56 by mmahloko          #+#    #+#             */
-/*   Updated: 2018/06/05 17:11:00 by mmahloko         ###   ########.fr       */
+/*   Updated: 2019/07/02 17:32:28 by mmahloko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int		ft_toupper(int c)
 {
-	if (ft_islower(c))
-		return (c - 32);
-	return (c);
+	return (ft_islower(c) ? c - 32 : c);
 }
